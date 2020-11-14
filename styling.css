@@ -1,0 +1,170 @@
+
+  header {
+  background: rgba(85, 214, 185, 0.9);
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+}
+body {
+  background-image: url(life.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+
+  margin: 0;
+  font-weight: 400;
+  font-family: 'Work sans', sans-serif;
+}
+
+ul, li, p, a, em {
+  font-family: sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+
+.LOGO{
+  text-transform: uppercase;
+  color: white
+}
+
+
+
+.nav-menu{
+  display: none;
+}
+
+.nav-menu-label{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.nav-menu-label span,
+.nav-menu-label span::before,
+.nav-menu-label span::after {
+  display: block;
+  background: white;
+  height: 3px;
+  width: 2em;
+  border-radius: 1px;
+  position: relative;
+
+
+
+}
+
+.nav-menu-label span::before,
+.nav-menu-label span::after {
+  content: '';
+  position: absolute;
+}
+
+.nav-menu-label span::before{
+  bottom: 9px;
+}
+.nav-menu-label span::after{
+  top:9px;
+}
+
+
+
+
+nav {
+  background: rgba(85, 214, 185, 0.9);
+  width: 100%;
+  position: absolute;
+  text-align: left;
+  left: 0;
+  top: 100%;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+
+
+
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.0rem;
+  text-transform: uppercase;
+  color: black;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out 250ms ;
+}
+nav a:hover{
+  color: white;
+}
+
+.nav-menu:checked ~ nav{
+  transform: scale(1,1);
+}
+
+.nav-menu:checked ~nav a{
+  opacity: 1;
+}
+
+.main {
+  margin: 100px auto;
+  max-width: 500px;
+}
+
+.main .list{
+  background: white;
+  border: 2px solid blue;
+  border-radius: 20px;
+}
+.main li{
+  line-height: 2;
+  list-style: none;
+  background: lightblue;
+  border-radius: 20px;
+  border: 1px solid grey;
+  margin: 5px auto;
+
+}
+
+.container{
+  margin: 100px auto;
+
+  height: 150px;
+  width: 300px;
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 2px solid blue;
+
+}
+.container div{
+  border: 1px solid blue;
+  border-radius:
+}
+
+.container p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .top{
+  font-weight: 500;
+}
