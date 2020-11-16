@@ -3,7 +3,6 @@
   background: rgba(85, 214, 185, 0.9);
   text-align: center;
   position: fixed;
-  z-index: 999;
   width: 100%;
   top: 0;
 }
@@ -29,10 +28,14 @@ ul, li, p, a, em {
 .LOGO{
   text-transform: uppercase;
   color: white
-
+}
+.LOGO a{
+  color: white;
 }
 
-
+.LOGO a:hover{
+  color: blue;
+}
 
 .nav-menu{
   display: none;
@@ -133,7 +136,6 @@ nav a:hover{
   background: white;
   border: 2px solid blue;
   border-radius: 20px;
-
 }
 .main li{
   line-height: 2;
@@ -143,7 +145,6 @@ nav a:hover{
   border: 1px solid grey;
   margin: 5px auto;
   width: 80%;
-
 }
 
 .container{
@@ -175,5 +176,55 @@ nav a:hover{
 .list h2{
   display: flex;
   padding: 0 20px 0 120px ;
+}
+
+
+
+
+.list .default ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.list .default li{
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.main-about{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  text-align: center;
+  width: 500px;
+  margin: auto;
+  margin-top: 10em;
+  border: 2px solid blue;
+  border-radius: 20px;
+  line-height: 1.5;
+}
+
+.main-index{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: lightgrey;
+  text-align: center;
+  width: 500px;
+  margin: auto;
+  margin-top: 10em;
+  border: 2px solid blue;
+  border-radius: 20px;
+  line-height: 0.5
+}
+.main-index p{
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.main-index h2{
+  color: rgba(50, 210, 150, 1.5)
 
 }
